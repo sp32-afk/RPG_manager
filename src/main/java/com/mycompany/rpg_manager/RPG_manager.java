@@ -14,6 +14,7 @@ import io.javalin.Javalin;
 public class RPG_manager {
 
     public static void main(String[] args) {
+        
         // 1. Agregamos un personaje de prueba a la taberna
         Taberna.repositorioPersonajes.add(new Personaje("Aragorn", "Guerrero", 10, 100));
 
