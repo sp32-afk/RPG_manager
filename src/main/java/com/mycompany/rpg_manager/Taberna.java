@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author FAMILIAR
  */
 public class Taberna {
-    public static final ArrayList<Personaje> repositorioPersonajes = new ArrayList();
+    public static final ArrayList<Personaje> repositorioPersonajes = new ArrayList<>();
     
 
     

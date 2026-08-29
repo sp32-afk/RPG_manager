@@ -4,7 +4,7 @@
 
 package com.mycompany.rpg_manager;
 
-import controlador.PersonajeController;
+import com.controlador.PersonajeController;
 import io.javalin.Javalin;
 
 /**
