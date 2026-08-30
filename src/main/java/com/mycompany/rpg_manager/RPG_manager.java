@@ -20,9 +20,13 @@ public class RPG_manager {
 
         // 2. Iniciamos Javalin en el puerto 7070
         Javalin app = Javalin.create(config -> {config.staticFiles.add("/public");}).start(7070);
-
+        
         // 3. Mapeamos la ruta GET para consultar los personajes
         app.get("/personajes", PersonajeController::obtenerTodos);
+        
+        // 4. Para capturar la creación mediante el formulario
+        app.post("/personajes", PersonajeController::crear);
+        
     }
 }
 

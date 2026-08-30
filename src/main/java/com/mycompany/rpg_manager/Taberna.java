@@ -10,7 +10,5 @@ import java.util.ArrayList;
  */
 public class Taberna {
     public static final ArrayList<Personaje> repositorioPersonajes = new ArrayList<>();
-    
-
-    
+        
 }

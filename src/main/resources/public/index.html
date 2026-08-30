@@ -11,7 +11,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 </head>
 <body>
     <h1>Lista de Personajes en la Taberna</h1>
-    
     <table>
         <thead>
             <tr>
@@ -30,6 +29,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </tr>
         </tbody>
     </table>
+    
+    <h2>Registrar nuevo Personaje</h2>
+    <form action=/personajes method="POST">
+     <!-- El atributo action en la etiqueta <form> 
+    indica la ruta del servidor hacia donde van los 
+    datos, y method indica la acción HTTP. -->
+	<div>
+		<label for="nombre">Nombre:</label>
+		<input name="nombre" required>
+		<label for="clase">Clase:</label>
+		<input name="clase" required> 
+		<label for="nivel">Nivel:</label>
+		<input name="nivel" required>
+	</div>
+	<button type="submit">CrearPersonaje</button>
+    </form>
 
-</body>
+    </body>
 </html>
