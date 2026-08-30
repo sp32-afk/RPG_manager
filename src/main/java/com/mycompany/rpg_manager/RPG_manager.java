@@ -19,7 +19,7 @@ public class RPG_manager {
         Taberna.repositorioPersonajes.add(new Personaje("Aragorn", "Guerrero", 10, 100));
 
         // 2. Iniciamos Javalin en el puerto 7070
-        Javalin app = Javalin.create().start(7070);
+        Javalin app = Javalin.create(config -> {config.staticFiles.add("/public");}).start(7070);
 
         // 3. Mapeamos la ruta GET para consultar los personajes
         app.get("/personajes", PersonajeController::obtenerTodos);
