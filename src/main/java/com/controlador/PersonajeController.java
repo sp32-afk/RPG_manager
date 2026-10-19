@@ -30,8 +30,7 @@ Todo dato proveniente de un formulario HTML llega como texto (String).
     String clase = ctx.formParam("clase");
     int nivel = Integer.parseInt(ctx.formParam("nivel"));
     int vida = 100; // Valor inicial por defecto
-    PersonajeServicio servicio = new PersonajeServicio();
-    if (!servicio.esValido(nombre, clase, nivel)) {
+    if (!PersonajeServicio.esValido(nombre, clase, nivel)) {
         ctx.status(400).json("Datos del personaje no válidos");
         return;
     }

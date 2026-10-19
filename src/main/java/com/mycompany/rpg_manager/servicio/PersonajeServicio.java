@@ -5,7 +5,9 @@ public class PersonajeServicio {
         if (nombre == null || nombre.isEmpty() || nombre.length() > 20) {
             return false;
         }
-        if (clase == null || !(clase.equalsIgnoreCase("Guerrero") || clase.equalsIgnoreCase("Mago") || clase.equalsIgnoreCase("Arquero"))) {
+        if (clase == null || !(clase.equalsIgnoreCase("Guerrero") || 
+                            clase.equalsIgnoreCase("Mago") || 
+                            clase.equalsIgnoreCase("Arquero"))) {
             return false;
         }
         if (nivel < 1 || nivel > 100) {
